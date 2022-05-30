@@ -25,7 +25,7 @@
     </ul>
     <div class="data">
       <% t =  Time.now() %>
-      <%= "#{t.hour}:#{t.min}:#{t.sec}" %>
+      <%= t.strftime("%k:%M:%S") %>
     </div>
   </nav>
   <main class='<%= controller.controller_name %>'>
